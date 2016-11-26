@@ -29,5 +29,5 @@
 2. Use the feature labels and activity labels to tidy the dataset, and make it more readable
 3. Extract only the variables that are mean() or std()
 4. Reduce the variable columns to a single pair (variable and value) to avoid untidy values as column names
-5. Grouped the tidy data by activity, subject, and variable
-6. Calculated the average value for each variable, activity, subject combination.
+5. Grouped the tidy data by activity, subject, and variable and stored in data_grouped
+6. Calculated the average value for each variable, activity, subject combination and store in data_means
