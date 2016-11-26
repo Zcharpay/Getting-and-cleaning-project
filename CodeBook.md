@@ -14,4 +14,20 @@
 - data_grouped: dataframe with the tidied data, grouped by activity, subject, and variable
 - data_means: dataframe with the mean for each variable, for each activity and subject.
 
+## Data
+- activity_labels.txt: the labels for each numeric activity code
+- features.txt: the list of features in the obseration datasets
+- subject_test.txt: the subject data for the test dataset
+- X_test.txt: observation data from the test dataset 
+- y_test.txt: activity data from the test dataset
+- subject_train.txt: the subject data for the training dataset
+- X_train.txt: observation data from the training dataset 
+- y_train.txt: activity data from the training dataset
 
+## Data Wrangling
+1. Merged the training and test datasets together (all three components: activity, subject, observation)
+2. Use the feature labels and activity labels to tidy the dataset, and make it more readable
+3. Extract only the variables that are mean() or std()
+4. Reduce the variable columns to a single pair (variable and value) to avoid untidy values as column names
+5. Grouped the tidy data by activity, subject, and variable
+6. Calculated the average value for each variable, activity, subject combination.
