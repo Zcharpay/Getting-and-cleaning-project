@@ -44,3 +44,6 @@ data_tidy <- melt(data_tidy,id=c("activity","subject"))
 ## Group the data and calculate the means by activity, subject, and variable
 data_grouped <- group_by(data_tidy,activity,subject,variable)
 data_means <- summarise(data_grouped,mean(value))
+
+## Write mean results to text file
+write.table(data_means,file="data_means.txt",row.names = FALSE)
